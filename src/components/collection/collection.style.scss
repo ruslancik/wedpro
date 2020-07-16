@@ -1,0 +1,144 @@
+.collection {
+    position: absolute;
+    top: 105.6rem;
+    left: 0;
+    width: inherit;
+    height: 55.2rem;
+    display:grid;
+    grid-template-columns: 38.4rem 98.4rem; 
+    margin: 0 3.6rem;
+    background-color: #EDEFF4;
+
+    
+
+    &_image-container {
+        grid-column: 1 / span 1;
+        background:  #00E0FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ellipse_mini-small {
+        position: absolute;
+        top: 16.8rem;
+        left: 11.3rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
+        border-radius: 50%;
+    }
+    .ellipse_mini-big {
+        position: absolute;
+        top: 21.2rem;
+        left: 24.2rem;
+        width: 7.6rem;
+        height: 7.6rem;
+        background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .shadow_one {
+        position: absolute;
+        width: 8.746rem;
+        height: 0.966rem;
+        left: 12.225rem;
+        top: 42.133rem;
+
+        background: #000000;
+        filter: blur(20px);
+        transform: matrix(0.87, -0.21, 0.65, 0.96, 0, 0);
+    }
+
+    .shadow_two{
+        position: absolute;
+        width: 15.371rem;
+        height: 1.264rem;
+        left: 16.105rem;
+        top: 39.275rem;
+
+        background: #262E4D;
+        filter: blur(20px);
+        transform: matrix(0.87, -0.21, 0.65, 0.96, 0, 0);
+    }
+
+    img {
+        width: 26.4rem;
+        height: 26.4rem;       
+        z-index: 2; 
+    }
+    
+}
+
+
+.collection_details {
+    display: grid;
+    grid-template-columns: 40.8rem 5.55rem;
+
+    
+
+    .first_grid {
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-column: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding:11.4rem 0;
+        
+        .nike_logo {
+            width: 7.2rem;
+            height: 2.6rem;
+            margin-bottom: 3rem;
+        }
+        .nike_runner {
+            width: 16.8rem;
+            height: 9.3rem;
+        }
+
+        span { 
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.6rem;
+            line-height: 1.7rem;
+            padding: 3.2rem 0 ;
+        }
+        .btn-container {
+
+            .btn {
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                width: 7.2rem;
+                height: 7.2rem;
+                background: #FFFFFF;
+                border: 0.2rem solid rgba(40, 54, 100, 0.1);
+                box-sizing: border-box;
+                border-radius: 3.6rem;
+                outline: none;
+                text-decoration: none;
+                    &-right {
+                        margin: 0 2.4rem;
+                    }
+                img { 
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 2.17rem;
+                    height: 2.17rem;
+                   }
+                
+            }
+        }
+        
+    }
+
+    .second_grid {
+        grid-column: 2 / span 1;
+    }
+    
+
+}

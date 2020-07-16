@@ -1,0 +1,26 @@
+.button {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: bold;
+    left: 15.6rem;
+    top: 20.8rem;
+
+    &:hover img {
+        margin-left: 0.5rem;
+    }
+
+    .arrow{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ffffff;
+        
+        img {
+            width: 4.5rem;
+            height: 1.66rem;
+            padding-left: 1.7rem;
+            transition: all .2s;
+        }
+    }
+}

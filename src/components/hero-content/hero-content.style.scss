@@ -1,0 +1,56 @@
+.hero-content {
+    padding: 0 0 0 15.6rem;
+    z-index: 99999999;
+    &_first {
+        position: absolute;
+        left: 15.6rem;
+        top: 24.3rem;
+        width: 38.1rem;
+        height: auto;
+        font-family: 'American Captain';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25rem;
+        line-height: 25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        overflow: hidden;
+    }
+
+    &_second {
+        position: absolute;
+        width: 86.6rem;
+        height: 25rem;
+        left: 15.6rem;
+        top: 49.1rem;
+        font-family: American Captain;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25rem;
+        line-height: 25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        overflow: hidden;
+
+    }
+
+    &_third {
+        position: absolute;
+        width: 51.9rem;
+        height: 14.4rem;
+        left: 15.6rem;
+        top: 75.5rem;
+        font-family: American Captain;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14.4rem;
+        line-height: 14.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #FFD569;
+        overflow: hidden;
+
+    }
+}
