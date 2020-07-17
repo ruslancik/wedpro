@@ -6,6 +6,13 @@
     background: #283664;
     overflow-x: hidden;
     z-index: -2;
+
+    @media screen and (max-width: 600px) {
+        
+       width: 60rem;
+       height: 121.6rem;
+       margin: 0 auto;
+      } 
   
  
   
@@ -18,7 +25,12 @@
 
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
         border-radius: 50%;
-    
+        @media screen and (max-width: 600px) {
+            width: 32.6rem;
+            height: 32.6rem;
+            top: 44.9rem;
+            left: 12.1rem;
+          } 
        
        }
     
@@ -31,7 +43,12 @@
         
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #43FFFF 0%, #495889 100%);
         border-radius: 50%;
-   
+        @media screen and (max-width: 600px) {
+            width: 15.6rem;
+            height: 15.6rem;
+            left: -6.2rem;
+            top: 39.5rem;
+          } 
     }
 
     .vector1 {
@@ -42,7 +59,12 @@
         height: 15.845rem;
         left: 105.8rem;
         top: 25.7rem;
-
+        @media screen and (max-width: 600px) {
+            width: 18.429rem;
+            height: 4.286rem;
+            left: 27.2rem;
+            top: 33.7rem;
+          } 
 
     }
 
@@ -54,6 +76,12 @@
         height: 25.3rem;
         left: 28.8rem;
         top: 27.8rem;
+        @media screen and (max-width: 600px) {
+            width: 28.571rem;
+            height: 6.905rem;
+            left: 11.8rem;
+            top: 36.995rem;
+          } 
 
     }
 
@@ -66,6 +94,12 @@
 
         background: #FF439D;
         border-radius: 50%;
+        @media screen and (max-width: 600px) {
+            width: 3.4rem;
+            height: 3.4rem;
+            left: 25.6rem;
+            top: 18.7rem;
+          }
         
     }
 
@@ -81,6 +115,12 @@
         filter: blur(15px);
         border-radius: 50%;
         z-index: -1;    
+        @media screen and (max-width: 600px) {
+            width: 15rem;
+            height: 15rem;
+            left: 27.4rem;
+            top: 16.6rem;
+          }
 
     }
 
@@ -96,6 +136,14 @@
         &:hover {
             top: 10.2rem;
         }
+        @media screen and (max-width: 600px) {
+            width: 28.8rem;
+            height: 23.04rem;
+            left: 1.6rem;
+            top: 40.13rem;
+          }
+
+        
     }
 
     .newest-shoes {
@@ -122,6 +170,12 @@
 
         border-radius: 12.2rem;
         transform: matrix(-1, 0, 0, 1, 0, 0);
+        @media screen and (max-width: 600px) {
+            width: 6.5rem;
+            height: 6.5rem;
+            left: 29rem;
+            top: 31.9rem;
+        }
         
     }
 
@@ -141,6 +195,13 @@
         
         border-radius: 4.8rem;
         transform: matrix(-1, 0, 0, 1, 0, 0);
+
+        @media screen and (max-width: 600px) {
+        width: 4.9rem;
+        height: 4.9rem;
+        left: 2.5rem;
+        top: 56.7rem;
+          }
  
     }
 

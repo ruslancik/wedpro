@@ -32,7 +32,6 @@ label {
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
-    cursor: pointer;
     text-align: center;
     background-position: 50%;
     background-size: 200% 200%;
@@ -70,6 +69,13 @@ input {
     grid-template-columns: 38.4rem 98.4rem; 
     margin: 0 3.6rem;
     background-color: #EDEFF4;
+    @media screen and (max-width: 600px) {
+        
+        grid-template-columns: 30.4rem;
+        grid-template-rows: 41.4rem 70rem;
+        height: auto;
+        
+      } 
 
     
 
@@ -139,6 +145,12 @@ input {
 .collection_details {
     display: grid;
     grid-template-columns: 40.8rem 55.5rem;
+    @media screen and (max-width: 600px) {
+      
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+      } 
 
     
 
@@ -150,6 +162,13 @@ input {
         justify-content: center;
         align-items: center;
         padding:11.4rem 0;
+
+        @media screen and (max-width: 600px) {
+        
+            grid-column: 1 / -1;
+            grid-row: 1 / span 1;
+            
+          } 
         
         .nike_logo {
             width: 7.2rem;
@@ -171,9 +190,14 @@ input {
             text-align: start;
         }
         .btn-container {
+            @media screen and (max-width: 600px) {
+        
+                order: -1;
+                background-color: white;
+                width: 100%;
+              } 
 
             .btn {
-                cursor: pointer;
                 position: relative;
                 display: inline-block;
                 width: 7.2rem;
@@ -184,6 +208,7 @@ input {
                 border-radius: 3.6rem;
                 outline: none;
                 text-decoration: none;
+               
                     &-right {
                         margin: 0 2.4rem;
                     }
@@ -206,6 +231,13 @@ input {
         justify-content: center;
         align-items: center;
         padding:11.4rem 0;
+
+        @media screen and (max-width: 600px) {
+        
+            grid-column: 1 / -1;
+            grid-row: 2 / span 1;
+            
+          } 
     }
     
 

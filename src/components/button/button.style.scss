@@ -28,9 +28,18 @@
 .btn-bottom{
     left: 104.9rem;
     top: 95.4rem;
+    @media screen and (max-width: 600px) {
+        left: 1.6rem;
+        top: 97.6rem;
+      } 
+    
 }
 
 .btn-top {
     left: 15.6rem;
     top: 20.8rem;
+    @media screen and (max-width: 600px) {
+        left: 1.6rem;
+        top: 12.4rem;
+      } 
 }

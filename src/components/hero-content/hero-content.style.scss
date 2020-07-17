@@ -16,6 +16,13 @@
         letter-spacing: 0.1em;
         color: #FFFFFF;
         overflow: hidden;
+        @media screen and (max-width: 600px) {
+        
+            font-size: 7.2rem;
+            line-height: 7.2rem;
+            top: 17.2rem;
+            left: 1.6rem;
+          } 
     }
 
     &_second {
@@ -33,7 +40,14 @@
         letter-spacing: 0.1em;
         color: #FFFFFF;
         overflow: hidden;
-
+        @media screen and (max-width: 600px) {
+        
+            font-size: 7.2rem;
+            line-height: 7.2rem;
+            top: 24.2rem;
+            left: 1.6rem;
+          } 
+ 
     }
 
     &_third {
@@ -51,6 +65,13 @@
         letter-spacing: 0.1em;
         color: #FFD569;
         overflow: hidden;
+        @media screen and (max-width: 600px) {
+        
+            font-size: 4.8rem;
+            line-height: 4.8rem;
+            left: 1.6rem;
+            top: 31.6rem;
+          } 
 
     }
 }

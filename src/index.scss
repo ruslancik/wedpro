@@ -54,7 +54,7 @@ html {
   font-size: 10px;
   cursor: url(./assets//cursor.png) 4 12, auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 600px) {
   html {
     font-size: 5px;
   }
@@ -65,7 +65,13 @@ html {
   }
 } 
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 11px;
+  }
+} 
+
+@media screen and (min-width: 1800px) {
   html {
     font-size: 18px;
   }
