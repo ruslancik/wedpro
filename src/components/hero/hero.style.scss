@@ -18,7 +18,7 @@
 
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
         border-radius: 50%;
-        
+    
        
        }
     
@@ -31,7 +31,7 @@
         
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #43FFFF 0%, #495889 100%);
         border-radius: 50%;
-
+   
     }
 
     .vector1 {
@@ -66,6 +66,7 @@
 
         background: #FF439D;
         border-radius: 50%;
+        
     }
 
     .ellipse-blur {
@@ -79,7 +80,7 @@
         opacity: 0.99;
         filter: blur(15px);
         border-radius: 50%;
-        z-index: -1;
+        z-index: -1;    
 
     }
 
@@ -97,6 +98,16 @@
         }
     }
 
+    .newest-shoes {
+        background: url(../../assets/newestShoes.svg) no-repeat;
+        background-size: contain;
+        position: absolute;
+        width: 40.8rem;
+        height: 7.2rem;
+        left: 42.1rem;
+        top: 95.2rem;
+    }
+
     .blur1{
         position: absolute;
         width: 15rem;
@@ -111,6 +122,7 @@
 
         border-radius: 12.2rem;
         transform: matrix(-1, 0, 0, 1, 0, 0);
+        
     }
 
     .blur2{
@@ -119,6 +131,7 @@
         height: 9.6rem;
         left: 67rem;
         top: 42.4rem;
+        z-index: 9999999;
         
         background: rgba(255, 255, 255, 0.25);
         border: .1rem solid rgba(255, 255, 255, 0.2);
@@ -128,6 +141,7 @@
         
         border-radius: 4.8rem;
         transform: matrix(-1, 0, 0, 1, 0, 0);
+ 
     }
 
     .circle-container {
@@ -139,6 +153,7 @@
         top: 23.7rem;
         left: 102rem;
         }
+
 }
 
 

@@ -1,0 +1,78 @@
+// select the svg element
+$svg: "";
+// select the path
+$path: "";
+// for each radio
+@for $i from 1 through 5 {
+  // for each valid star
+  @for $x from 1 through $i {
+    // add checked input to selectors
+    $svg: $svg + "#star-#{$i}:checked ~ ";
+    $path: $path + "#star-#{$i}:checked ~ ";
+    // add svg or path element sib to selectors
+    // scope = section label svg [path]
+    $svg: $svg + "section [for='star-#{$x}'] svg";
+    $path: $path + "section [for='star-#{$x}'] svg path";
+    // if not the last, we add a comma
+    @if $x != $i {
+      $svg: $svg + ", ";
+      $path: $path + ", ";
+    }
+  }
+  // if not the last, we add the comma
+  @if $i != 5 {
+    $svg: $svg + ", ";
+    $path: $path + ", ";
+  }
+}
+
+// style the active svg
+#{$svg} {
+  transform: scale(1);
+}
+// style the active path
+#{$path} {
+  border: 2px solid #283664;;
+  stroke: darken(#283664, 10%);
+}  
+
+
+
+label {
+  display: inline-block;
+  width: 2rem;
+  margin-right:2rem;
+  text-align: center;
+  cursor: pointer;
+  svg {
+    width: 2rem;
+    height: auto;
+    fill: white;
+    stroke: #CCC;
+    transition: transform 200ms ease-in-out;
+    path {
+      transition: fill 200ms ease-in-out,
+        stroke 100ms ease-in-out;
+    }
+  }
+}
+
+
+
+input {
+  display: none;
+}
+
+.review_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 170%;
+    display: flex;
+    align-items: center;
+    margin: 2.9rem 0 1.8rem 0;
+    
+    color: #283664;
+ 
+}

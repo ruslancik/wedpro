@@ -1,3 +1,65 @@
+/******
+HEART
+*******/
+
+.heart {
+position: absolute;
+top: 4rem;
+left: 28.4rem;
+width: 60px;
+height: 60px;
+background: #FFFFFF;
+border-radius: 30px;
+z-index: 1;
+input {
+    display: none;
+    &:checked ~ {
+        label {
+            background-repeat: no-repeat;
+            background-size: 1000% 1000%;
+            svg {
+                fill: #F5405B;
+                stroke: #F5405B;
+            }
+            path {
+                stroke: #F5405B;
+            }
+        }
+    }
+}
+label {
+    display: block;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    text-align: center;
+    background-position: 50%;
+    background-size: 200% 200%;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+}
+}
+
+
+
+input {
+  display: none;
+}
+
+
+
+
+
+
+
 .collection {
     position: absolute;
     top: 105.6rem;
@@ -17,6 +79,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
 
     }
 
@@ -75,11 +138,12 @@
 
 .collection_details {
     display: grid;
-    grid-template-columns: 40.8rem 5.55rem;
+    grid-template-columns: 40.8rem 55.5rem;
 
     
 
     .first_grid {
+        color: #283664;
         grid-column: 1 / span 1;
         display: grid;
         grid-column: 1fr;
@@ -104,6 +168,7 @@
             font-size: 1.6rem;
             line-height: 1.7rem;
             padding: 3.2rem 0 ;
+            text-align: start;
         }
         .btn-container {
 
@@ -133,11 +198,14 @@
                 
             }
         }
-        
+            
     }
 
     .second_grid {
         grid-column: 2 / span 1;
+        justify-content: center;
+        align-items: center;
+        padding:11.4rem 0;
     }
     
 

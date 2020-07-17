@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar.component'
 import Button from '../button/button.component'
 import HeroContent from '../hero-content/hero-content.component'
 
-const Hero = ({text}) => {
+const Hero = ({text, classForPos}) => {
 
 
 
@@ -21,7 +21,9 @@ const Hero = ({text}) => {
             <div className="blur1"></div>
             <div className="blur2"></div>
             <div className='circle-container'></div>
-            <Button text='Enjoy discounts'/>
+            <div className="newest-shoes"></div>
+            <Button classForPos='btn-top' text='Enjoy discounts'/>
+            <Button  classForPos='btn-bottom' text='See all shoes'/>
             <HeroContent/>
         </div>
     )

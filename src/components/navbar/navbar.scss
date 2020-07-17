@@ -22,11 +22,10 @@
             font-weight: normal;
             font-size: 1.4rem;
             line-height: 1.7rem;
-            padding-right: 6.4rem;
+            margin-right: 6.4rem;
             text-transform: uppercase;
             /* identical to box height */
-
-
+            cursor: pointer;
             color: #FFFFFF;
 
         }
@@ -47,8 +46,15 @@
         font-weight: bold;
         font-size: 1.4rem;
         line-height: 1.7rem;
-
+        outline: none;
+        cursor: pointer;
     }
 
+    .cart_login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
   
 }

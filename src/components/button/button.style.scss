@@ -4,9 +4,7 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: bold;
-    left: 15.6rem;
-    top: 20.8rem;
-
+ 
     &:hover img {
         margin-left: 0.5rem;
     }
@@ -23,4 +21,16 @@
             transition: all .2s;
         }
     }
+
+
+}
+
+.btn-bottom{
+    left: 104.9rem;
+    top: 95.4rem;
+}
+
+.btn-top {
+    left: 15.6rem;
+    top: 20.8rem;
 }
