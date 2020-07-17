@@ -21,7 +21,7 @@ const Hero = ({text, classForPos}) => {
             <div className="blur1"></div>
             <div className="blur2"></div>
             <div className='circle-container'></div>
-            <div className="newest-shoes"></div>
+            <div className="newest-shoes">Newest Shoes</div>
             <Button classForPos='btn-top' text='Enjoy discounts'/>
             <Button  classForPos='btn-bottom' text='See all shoes'/>
             <HeroContent/>

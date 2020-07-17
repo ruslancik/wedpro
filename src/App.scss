@@ -2,4 +2,11 @@
     width: auto;
     height: auto;
     background-color: #E5E5E5;
+
+    @media (min-width: 320px) and (max-width: 600px) {
+        width: 38rem;
+        overflow: hidden;
+       } 
+ 
+    
 }

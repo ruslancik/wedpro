@@ -7,12 +7,17 @@
     overflow-x: hidden;
     z-index: -2;
 
-    @media screen and (max-width: 600px) {
-        
+    @media screen and (min-width: 1440px) {
+       width: 100%;
+      } 
+
+    @media (min-width: 320px) and (max-width: 600px) {
        width: 60rem;
        height: 121.6rem;
        margin: 0 auto;
       } 
+
+     
   
  
   
@@ -29,7 +34,7 @@
             width: 32.6rem;
             height: 32.6rem;
             top: 44.9rem;
-            left: 12.1rem;
+            left: 30.1rem;
           } 
        
        }
@@ -147,14 +152,27 @@
     }
 
     .newest-shoes {
-        background: url(../../assets/newestShoes.svg) no-repeat;
         background-size: contain;
         position: absolute;
-        width: 40.8rem;
-        height: 7.2rem;
         left: 42.1rem;
         top: 95.2rem;
-    }
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4.8rem;
+        line-height: 150%;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        @media screen and (max-width: 600px) {
+            width: 23.4rem;
+            height: 14.4rem;
+            left: 1.6rem;
+            top: 80.7rem;
+
+          }
+}
 
     .blur1{
         position: absolute;
@@ -213,6 +231,12 @@
         position: relative;
         top: 23.7rem;
         left: 102rem;
+
+        @media (min-width: 320px) and (max-width: 600px) {
+            height: 10.8rem;
+            left: 22rem;
+            top: 48rem;
+           } 
         }
 
 }
