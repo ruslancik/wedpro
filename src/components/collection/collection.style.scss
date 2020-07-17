@@ -11,6 +11,9 @@ height: 60px;
 background: #FFFFFF;
 border-radius: 30px;
 z-index: 1;
+@media screen and (max-width: 600px) {
+    left: 25rem;
+}
 input {
     display: none;
     &:checked ~ {
@@ -70,9 +73,9 @@ input {
     margin: 0 3.6rem;
     background-color: #EDEFF4;
     @media screen and (max-width: 600px) {
-        width: 25rem;
-        grid-template-columns: 30.4rem;
-        grid-template-rows: 41.4rem 70rem;
+        margin: 0 1.6rem;
+        width: 34.8rem;
+        grid-template-columns: 38.8rem;
         height: auto;
         } 
 
@@ -85,7 +88,9 @@ input {
         justify-content: center;
         align-items: center;
         position: relative;
-
+        @media screen and (max-width: 600px) {
+            height: 414px;
+        }
     }
 
     .ellipse_mini-small {
@@ -96,6 +101,9 @@ input {
         height: 2.8rem;
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
         border-radius: 50%;
+        @media screen and (max-width: 600px) {
+            left: 9.3rem;
+        }
     }
     .ellipse_mini-big {
         position: absolute;
@@ -106,6 +114,10 @@ input {
         background: radial-gradient(71.47% 71.47% at 30.21% 28.53%, #F5405B 0%, #495889 100%);
         border-radius: 50%;
         z-index: 1;
+        @media screen and (max-width: 600px) {
+            left: 24.3rem;
+            top: 160px;
+        }
     }
 
     .shadow_one {
@@ -118,6 +130,10 @@ input {
         background: #000000;
         filter: blur(20px);
         transform: matrix(0.87, -0.21, 0.65, 0.96, 0, 0);
+        @media screen and (max-width: 600px) {
+            top: 380px;
+        }
+        
     }
 
     .shadow_two{
@@ -130,6 +146,10 @@ input {
         background: #262E4D;
         filter: blur(20px);
         transform: matrix(0.87, -0.21, 0.65, 0.96, 0, 0);
+        @media screen and (max-width: 600px) {
+            left: 16.105rem;
+            top: 350px;
+        }
     }
 
     img {
@@ -144,6 +164,7 @@ input {
 .collection_details {
     display: grid;
     grid-template-columns: 40.8rem 55.5rem;
+
     @media screen and (max-width: 600px) {
       
         grid-template-columns: 1fr;
