@@ -1,0 +1,103 @@
+.footer {
+    position: absolute;
+    left: 0;
+    top: 261rem;
+    width: 143rem;
+    height: 44.8rem;
+    background-color: #262E4D;
+    padding-top: 12.8rem;
+    padding-left: 15.6rem;
+    padding-right: 15.6rem;
+    display: grid;
+    grid-template-columns: repeat(5, auto-fit);
+    @media screen and (max-width: 600px) {
+        position: absolute;
+        width: 100%;
+        height: 99.5rem;
+        left: 0px;
+        top: 350.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      
+        padding-top: 0;
+        padding-left: 7.6rem;
+        padding-right: 0;
+    }
+   
+    &-column_1 {
+        img {
+            width: 7.2rem;
+            height: 2.61rem;
+        }
+        @media screen and (max-width: 600px) {
+            padding-bottom: 6.4rem;
+        }
+    }
+
+    &-column_2,
+    &-column_3, 
+    &-column_4, 
+    &-column_5 {
+
+        .footer-list {
+            padding-bottom: 6.4rem;
+
+            &_item {
+                padding-bottom: 1.2rem;
+                
+                a {
+                    text-decoration: none;
+                    font-family: 'Montserrat', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 1.7rem;
+                    color: #FFFFFF;
+                }
+            }
+
+            
+        }
+
+       
+    }
+
+    .copyright {
+        grid-column: 2 / span 4;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+
+        &-date {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-align: right;
+            vertical-align: text-bottom;
+            color: #FFFFFF;
+            opacity: 0.5;
+            justify-self: center;
+            margin-right: 10rem;
+            
+        }
+        &-nike {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-align: right;
+            vertical-align: text-bottom;
+            color: #FFFFFF;
+            opacity: 0.5;
+            align-self: center ;
+            justify-self: center;
+            padding-right: 1rem;
+        }
+    }
+}
+
