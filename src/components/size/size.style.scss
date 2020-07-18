@@ -24,6 +24,11 @@
     line-height: 1.7rem;
     text-align: center;
     color: #283664;
+    @media screen and (max-width: 600px) {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1.1rem;
+  }
 
     &:hover{
       background-color:#283664 ;

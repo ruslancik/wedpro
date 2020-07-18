@@ -7,6 +7,7 @@ import leftArr from '../../assets/left-arr.svg'
 import rightArr from '../../assets/right-arr.svg'
 import Rate from '../rate/rate.component'
 import Size from '../size/size.component'
+import Color from '../color/color.component'
 
 const Collection = () => {
     return (
@@ -39,6 +40,7 @@ const Collection = () => {
                 <div className="second_grid">
                         <Size/>
                         <Rate/> 
+                        <Color/>
                     </div>
                 
                 </div>

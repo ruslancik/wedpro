@@ -187,6 +187,7 @@ input {
         
             grid-column: 1 / -1;
             grid-row: 1 / span 1;
+            padding: 0;
             
           } 
         
@@ -194,10 +195,17 @@ input {
             width: 7.2rem;
             height: 2.6rem;
             margin-bottom: 3rem;
+            @media screen and (max-width: 600px) {
+                margin-left: 4.8rem;
+                margin-top: 6rem;
+              } 
         }
         .nike_runner {
             width: 16.8rem;
             height: 9.3rem;
+            @media screen and (max-width: 600px) {
+                margin-left: 4.8rem;
+              }
         }
 
         span { 
@@ -208,6 +216,9 @@ input {
             line-height: 1.7rem;
             padding: 3.2rem 0 ;
             text-align: start;
+            @media screen and (max-width: 600px) {
+                margin-left: 4.8rem;
+              }
         }
         .btn-container {
             @media screen and (max-width: 600px) {
@@ -215,6 +226,11 @@ input {
                 order: -1;
                 background-color: white;
                 width: 100%;
+                padding:4rem  9.8rem;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
               } 
 
             .btn {
@@ -256,9 +272,10 @@ input {
         
             grid-column: 1 / -1;
             grid-row: 2 / span 1;
-            
-          } 
-    }
+            padding: 34px 0 0 4.8rem;
+          }          
+    
+     }
     
 
 }

@@ -1,0 +1,102 @@
+.color {
+
+  &-choice{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 170%;
+    display: flex;
+    align-items: center;
+    margin: 2.9rem 0 1.8rem 0;
+    color: #283664;
+  }
+
+  &-selection{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+    &_item {
+      width: 6rem;
+      height: 3.2rem;
+      border-radius: 30px;
+      margin-right: 1.2rem;
+      background-color: #D9DDE6;
+      display: flex;
+      &:hover {
+         border: 2px solid #283664;
+         background-color: #EDEFF4;
+       }
+
+  
+
+    }
+
+    .item-1 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+     span:first-child {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #0051C9;
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #FFB443;
+      }
+
+    }
+    .item-2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+     span:first-child {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #0051C9;
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #262E4D;
+      }
+
+    }
+    .item-3 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+     span:first-child {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: #362A52;
+      }
+
+    }
+
+  }
+
+}
