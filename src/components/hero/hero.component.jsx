@@ -6,7 +6,7 @@ import HeroContent from '../hero-content/hero-content.component'
 
 const Hero = ({text, classForPos}) => {
 
-
+    
 
     return (
         <div className='hero'>
@@ -27,6 +27,6 @@ const Hero = ({text, classForPos}) => {
             <HeroContent/>
         </div>
     )
-}
 
+    }
 export default Hero;
