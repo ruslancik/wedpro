@@ -5,8 +5,11 @@ import './navbar.scss'
 
 
 const Navbar = () => {
+
+
+
     return (
-        <div className='navbar-desktop'>
+        <div className='navbar'>
             <img src={navLogo} alt="nike logo"/>
               <ul className="menu">
                 <li className="menu_item">New Arrivals</li>
@@ -22,6 +25,7 @@ const Navbar = () => {
                 
             </div>
         </div>
+        
     )
 }
 

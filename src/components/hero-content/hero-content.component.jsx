@@ -4,9 +4,9 @@ import './hero-content.style.scss'
 function HeroContent() {
     return (
         <div className='hero-content'>
-            <div className='hero-content_first'>You</div>
-            <div className='hero-content_second'>Deserve</div>
-            <div className='hero-content_third'>Original</div>
+            <span className='hero-content_first'>You</span>
+            <span className='hero-content_second'>Deserve</span>
+            <span className='hero-content_third'>Original</span>
         </div>
     )
 }
