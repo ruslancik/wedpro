@@ -75,7 +75,7 @@
 Text Animation
 */
 
-div{
+.hero-content{
     font-size: 75px;
     text-transform: uppercase;
     
@@ -90,36 +90,38 @@ div{
       animation-name: titleAnimation;
       animation-timing-function:ease;
       animation-duration: 1.5s;
+      animation-delay: 0.6s;
+      animation-fill-mode: forwards;
+  
+        &:first-child{
+        animation-delay: 0.5s;
+    
+        }
+        &:nth-child(2){
+        animation-delay: 0.5s;
+    
+        }
+        &:last-child{
+        animation-delay: 0.5s;
+        }
+
+        @keyframes titleAnimation {
+            0% {
+              transform: translateY(50px);
+              opacity: 0;
+              clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+          }
+          100% {
+              transform: translateY(0);
+              opacity: 1;
+              clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+          }
+        
+        }
+      
+
     }
   }
-  div span{
-    animation-delay: 0.6s;
-    -webkit-animation-fill-mode: forwards;
-  
-    &:first-child{
-      animation-delay: 0.5s;
-  
-    }
-     &:nth-child(2){
-      animation-delay: 0.5s;
-  
-    }
-    &:last-child{
-      animation-delay: 0.5s;
-    }
-  }
   
   
-  @keyframes titleAnimation {
-      0% {
-        transform: translateY(50px);
-        opacity: 0;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
-    }
   
-  }
