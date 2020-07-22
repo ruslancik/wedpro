@@ -18,7 +18,9 @@ import {
     HeroShoes,
     NewestShoes,
     RotateImage,
-    ImageContainer
+    ImageContainer,
+    EllipseShadow,
+    Shadow
 } from './header.style'
 
 const Header = ({text, classForPos}) => {
@@ -43,6 +45,8 @@ const Header = ({text, classForPos}) => {
             <EllipseBlur/>
             <HeroShoes/>
             <HeroContent/>
+            <EllipseShadow/>
+            <Shadow/>
             <Blur/>
             <MotionBlur/>
             <RotateImage>

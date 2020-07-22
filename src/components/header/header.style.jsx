@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import shoesHero from '../../assets/shoes-hero.svg'
 import vectorPink from '../../assets/vector2.svg'
 import vectorYellow from '../../assets/vector1.svg'
-import group from '../../assets/group.png'
+import shadowEllipse from '../../assets/shadow-ellipse.svg'
 
 
 
@@ -304,3 +304,42 @@ export const ImageContainer = styled.img`
         width: auto;
         height: 100%;
 `
+
+export const EllipseShadow = styled.div`
+    background: url(${shadowEllipse}) no-repeat;
+    background-size: contain;
+    width: 26.8rem;
+    height: 25.8rem;
+    position: absolute;
+    left: 67.8rem;
+    top: 50.8rem;
+    z-index: -1;
+
+    @media screen and (max-width: 600px) {
+        width: 15.6rem;
+        height: 10.3rem;
+        left: 1.143rem;
+        top: 60.7rem;
+    }
+    
+`
+
+export const Shadow = styled.div`
+    position: absolute;
+    width: 48.226rem;
+    height: 4.6rem;
+    left: 74.314rem;
+    top: 53.302rem;
+    filter: blur(50px);
+    background: #222222;
+    transform: rotate(-12.46deg);
+    z-index: 1;
+
+    @media screen and (max-width: 600px) {
+        width: 24.802rem;
+        height: 2.366rem;
+        left: 6.259rem;
+        top: 62.354rem;
+        filter: blur(50px);
+    }
+ `
