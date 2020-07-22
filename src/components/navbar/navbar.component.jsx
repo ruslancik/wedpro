@@ -9,7 +9,8 @@ const Navbar = () => {
 
 
     return (
-        <div className='navbar'>
+        <>
+        <nav className='navbar'>
             <img src={navLogo} alt="nike logo"/>
               <ul className="menu">
                 <li className="menu_item"><a href=""> New Arrivals </a></li>
@@ -22,9 +23,31 @@ const Navbar = () => {
                 <button className='btn'>
                    Log In
                 </button>
-                
             </div>
+        </nav>
+        <div className='navbar-m-container'>
+
+
+        <nav className="mobile-menu">
+            <img src={navLogo} alt="nike logo"/>
+            <input type="checkbox" id="checkbox" className="mobile-menu__checkbox"/>
+            <label htmlFor="checkbox" className="mobile-menu__btn">
+                <div className="mobile-menu__icon1"></div>
+                <div className="mobile-menu__icon2"></div>
+                <div className="mobile-menu__icon3"></div>
+                </label>
+
+            <div className="mobile-menu__overlay">
+                <ul className="mobile-menu__list">
+                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link new-arrival">New Arrivals</a></li>
+                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link store">Store</a></li>
+                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link video">Videos</a></li>
+                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link blog">Blogs</a></li>
+                </ul>
+            </div>
+        </nav>
         </div>
+        </>
         
     )
 }

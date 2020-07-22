@@ -15,10 +15,11 @@ export const HeroContainer = styled.div`
         top: 0rem;
         background: #283664;
         overflow-x: hidden;
-        z-index: -2;
+        z-index: -100;
 
         @media screen and (min-width: 1440px) {
             width: 144rem;
+            
         } 
         @media screen and (max-width: 1440px) {
         width: 143rem;
@@ -29,6 +30,7 @@ export const HeroContainer = styled.div`
         @media screen and (max-width: 600px) {
         width: 100%;
         height: 121.6rem;
+        z-index: -1;
         } 
 `
 
@@ -225,7 +227,7 @@ export const MotionBlur = styled.div`
         height: 9.6rem;
         left: 67rem;
         top: 42.4rem;
-        z-index: 9999999;
+        z-index: 99;
 
         background: rgba(255, 255, 255, 0.25);
         border: .1rem solid rgba(255, 255, 255, 0.2);
@@ -273,7 +275,7 @@ export const NewestShoes = styled.div`
         line-height: 150%;
         text-transform: uppercase;
         -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
+        strokeWidth: 1px;
         -webkit-text-stroke-color: #ffffff;
         @media screen and (max-width: 600px) {
             width: 23.4rem;

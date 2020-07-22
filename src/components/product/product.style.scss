@@ -6,6 +6,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -99;
+
     cursor: url(../../assets/cursor-2.svg) 4 12 ,auto;
     @media screen and (max-width: 600px) {
         flex-direction: column;

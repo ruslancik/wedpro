@@ -10,6 +10,7 @@
     padding-right: 15.6rem;
     display: grid;
     grid-template-columns: repeat(5, auto-fit);
+    z-index: -99;
     @media screen and (max-width: 600px) {
         position: absolute;
         width: 100%;
