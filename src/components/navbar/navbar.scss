@@ -69,8 +69,6 @@
 }
 
 
-$primary-color: #283664;
-$space-m: 1.6rem;
 
 .navbar-m-container {
     display: none;
@@ -93,9 +91,9 @@ $space-m: 1.6rem;
   justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  padding: 0 $space-m;
+  padding: 0 1.6rem;
   top: 0;
-  background-color: $primary-color;
+  background-color: #283664;
   left: 0;
   right: 0;
   height: 7rem;
@@ -164,7 +162,7 @@ $space-m: 1.6rem;
     opacity: 1;
     transition: .5s;
     transition-delay: .2s;
-    background-color: $primary-color;
+    background-color: #283664;
     overflow: hidden;
 
   }
@@ -176,6 +174,7 @@ $space-m: 1.6rem;
     padding-left: 0;
     width: 100%;
     height: 100%;
+    margin-top: 5rem;
     
   }
 
@@ -191,12 +190,11 @@ $space-m: 1.6rem;
   }
 
   .new-arrival {
-        //position: absolute;
-        //left: 1.6rem;
-       // top: 5.4rem;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ffffff;
+        margin-left: 1.6rem;
+
  }
 
   .store {
@@ -210,7 +208,6 @@ $space-m: 1.6rem;
     line-height: 150%;
     text-transform: uppercase;
     color: #FFFF;
-    transition: all 1s;
 
      a,
      label {
@@ -218,6 +215,7 @@ $space-m: 1.6rem;
       color:white;
       transition: all .25s ease-in;
       margin: 0;
+      margin-left: 1.6rem;;
 
     }
     .group-list a{
@@ -228,15 +226,22 @@ $space-m: 1.6rem;
       text-transform: none;
       margin-bottom: 0.8rem;
     }
+    input[type=checkbox] + label > span > img{
+      width: 3rem;
+      height: 3rem;
+      transform: rotate(0);
+      transition: all 1s;
+   }
     
     .group-list {
       max-height: 0;
       overflow: hidden;
-      transition: max-height .5s ease-in-out;
+      transition: max-height 1s ease-in-out;
     }
     
     input[type=checkbox]:checked + label + div {
      max-height: 100%;
+     transition: max-height 5s ease-in-out;
      }
     
     label > span {
@@ -244,22 +249,22 @@ $space-m: 1.6rem;
       transition: all .65s ease;
     }
     
-    input[type=checkbox]:checked + label > span {
-       transform: rotate(90deg);
+    input[type=checkbox]:checked + label > span > img{
+        width: 3rem;
+        height: 3rem;
+       transform: rotate(180deg);
+       transition: all 1s;
     }
+    
   }
 
-/*
+
   .video {
-    position: absolute;
-    left: 1.6rem;
-    top: 18.2rem;
+    margin-left: 1.6rem;
   }
   .blog {
-    position: absolute;
-    left: 1.6rem;
-    top: 24.6rem;
-  }*/
+    margin-left: 1.6rem;
+  }
 
   &__link {
     text-decoration: none;
@@ -283,6 +288,9 @@ $space-m: 1.6rem;
                 transition-delay: 0s;
               }
 
+              label {
+                transition: all 5s;
+              }
 
            
               &__btn {

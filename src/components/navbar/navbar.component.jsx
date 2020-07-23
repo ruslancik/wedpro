@@ -2,30 +2,42 @@ import React from 'react'
 import navLogo from '../../assets/nav-logo.svg'
 import cart from '../../assets/cart.svg'
 import './navbar.scss'
+import arrDown from '../../assets/arr-down.svg'
 
+//style 
 
-const Navbar = () => {
+import {
+    NavDesk,
+    MenuContainer,
+    MenuItem,
+    NavLink,
+    LoginButton,
+    CartLogin,
+    LogoContainer,
+    CartIconContainer
+} from './navbar.style'
+
+const Navbar = ({...otherProps}) => {
 
    return (
-        <>
-        <nav className='navbar'>
-            <img src={navLogo} alt="nike logo"/>
-              <ul className="menu">
-                <li className="menu_item"><a href=""> New Arrivals </a></li>
-                <li className="menu_item"><a href=""> Store </a></li>
-                <li className="menu_item"><a href=""> Videos </a></li>
-                <li className="menu_item"><a href=""> Blogs </a></li>
-            </ul> 
-            <div className='cart_login'>
-                <img src={cart} alt="cart"/>
-                <button className='btn'>
+        <div>
+        <NavDesk {...otherProps}>
+            <LogoContainer/>
+              <MenuContainer>
+                <MenuItem><NavLink to='/new-arrivals'> New Arrivals </NavLink></MenuItem>
+                <MenuItem><NavLink to='/store'> Store </NavLink></MenuItem>
+                <MenuItem><NavLink to='/video'> Videos </NavLink></MenuItem>
+                <MenuItem><NavLink to='/blog'> Blogs </NavLink></MenuItem>
+            </MenuContainer> 
+            <CartLogin>
+                <CartIconContainer/>
+                <LoginButton>
                    Log In
-                </button>
-            </div>
-        </nav>
-        <div className='navbar-m-container'>
+                </LoginButton>
+            </CartLogin>
+        </NavDesk>
 
-
+    <div className='navbar-m-container'>
         <nav className="mobile-menu">
             <img src={navLogo} alt="nike logo"/>
             <input type="checkbox" id="checkbox" className="mobile-menu__checkbox"/>
@@ -40,7 +52,7 @@ const Navbar = () => {
                     <li className="mobile-menu__item"><a href="#" className="mobile-menu__link new-arrival">New Arrivals</a></li>
                     <li className="mobile-menu__item"><a href="#" className="mobile-menu__link store">
                             <input id="group" type="checkbox" hidden />
-                            <label htmlFor="group">Store<span>+</span></label>
+                            <label htmlFor="group">Store<span><img src={arrDown} alt=""/></span></label>
                             <div className="group-list">
                                 <a href="#">Item1</a>
                                 <a href="#">Item2</a>
@@ -52,7 +64,7 @@ const Navbar = () => {
             </div>
         </nav>
         </div>
-        </>
+        </div>
         
     )
 }

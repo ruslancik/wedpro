@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.scss';
-import Header from './components/header/header.component'
-import Collection from './components/collection/collection.component'
-import Banner from './components/banner/banner.component'
-import Product from './components/product/product.component';
-import Footer from './components/footer/footer.component';
-import LatestDeals from './components/latest-deals/latest-deals.component';
+import Home from './pages/home/home.component'
+import Shop from './pages/shop/shop.component'
+import {Route, Switch } from 'react-router-dom'
+
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Collection/>
-      <Banner />
-      <Product />
-      <LatestDeals/>
-      <Footer/>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/shop' component={Shop} />
+        </Switch>
     </div>
   );
 }
