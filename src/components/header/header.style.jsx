@@ -30,7 +30,7 @@ export const HeroContainer = styled.div`
         @media screen and (max-width: 600px) {
         width: 100%;
         height: 121.6rem;
-        z-index: -1;
+        z-index: -2
         } 
 `
 
@@ -275,7 +275,7 @@ export const NewestShoes = styled.div`
         line-height: 150%;
         text-transform: uppercase;
         -webkit-text-fill-color: transparent;
-        strokeWidth: 1px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ffffff;
         @media screen and (max-width: 600px) {
             width: 23.4rem;

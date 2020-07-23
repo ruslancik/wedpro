@@ -5,6 +5,8 @@ import Collection from './components/collection/collection.component'
 import Banner from './components/banner/banner.component'
 import Product from './components/product/product.component';
 import Footer from './components/footer/footer.component';
+import LatestDeals from './components/latest-deals/latest-deals.component';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
       <Collection/>
       <Banner />
       <Product />
+      <LatestDeals/>
       <Footer/>
     </div>
   );

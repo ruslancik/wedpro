@@ -72,7 +72,7 @@ input {
     grid-template-columns: 38.4rem 98.4rem; 
     margin: 0 3.6rem;
     background-color: #EDEFF4;
-    z-index: -99;
+    z-index: -1;
     @media screen and (max-width: 600px) {
         margin: 0 1.6rem;
         width: 34.8rem;

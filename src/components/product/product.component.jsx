@@ -2,10 +2,11 @@ import React from 'react'
 import './product.style.scss'
 import sliderShoes1 from '../../assets/slider-shoes1.svg';
 import sliderShoes2 from '../../assets/slider-shoes2.svg';
-import nikeLogo from '../../assets/nav-logo.svg'
+import nikeLogo from '../../assets/nav-logo.svg';
 
 const Product = () => {
     return (
+        
         <div className='product' >
             <div className="product-item item1">
                 <p className='product-item_text p1' >Air Max <br/><span>2090</span></p>
@@ -20,6 +21,7 @@ const Product = () => {
                 <img className='product-item_logo' src={nikeLogo} alt="Nike"/>
             </div>
         </div>
+        
     )
 }
 

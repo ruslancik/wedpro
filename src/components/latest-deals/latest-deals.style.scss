@@ -1,0 +1,64 @@
+.deal {
+    @media screen and (min-width: 600px) {
+             display: none;
+    }
+    position: absolute;
+    width: 34.8rem;
+    height: 196.5rem;
+    z-index: -99;
+    top: 346rem;
+    left: 1.6rem;
+    right: 1.6rem;
+    display:grid;
+    grid-template-rows: 15.2rem 46.1rem 4.3rem 43.1rem 4.3rem 5.2rem 30.7rem 25.5rem 4.9rem 17.6rem;
+    background-color: white;
+    
+    .see-all-shoes {
+        grid-row: 1 / span 1;
+        background-color: grey;
+    }
+    .latest-deal {
+        grid-row: 2 / span 1;
+        background-color: greenyellow;
+    }
+    .pink-banner {
+        grid-row: 3 / span 1;
+        background-color: #F5405B;
+    }
+    .men-full {
+        grid-row: 4 / span 1;
+        background: url(../../assets/men-full.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .blue-banner {
+        grid-row: 5 / span 1;
+        background-color: #262E4D;
+    }
+    .torg-banner {
+        grid-row: 6 /span 1;
+        background-color: #00E0FF;
+    }
+    .men-leg {
+        grid-row: 7 / span 1;
+        background: url(../../assets/men-leg.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .men-back {
+        grid-row: 8 / span 1;
+        background: url(../../assets/men-back.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .orange-banner {
+        grid-row: 9 / span 1;
+        background-color: #FFB443;
+    }
+    .see-all-shoes2 {
+        grid-row: 10 / span 1;
+        background-color: palegreen;
+    }
+
+}
+

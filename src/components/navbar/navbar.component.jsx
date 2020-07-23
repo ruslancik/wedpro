@@ -6,9 +6,7 @@ import './navbar.scss'
 
 const Navbar = () => {
 
-
-
-    return (
+   return (
         <>
         <nav className='navbar'>
             <img src={navLogo} alt="nike logo"/>
@@ -40,7 +38,14 @@ const Navbar = () => {
             <div className="mobile-menu__overlay">
                 <ul className="mobile-menu__list">
                     <li className="mobile-menu__item"><a href="#" className="mobile-menu__link new-arrival">New Arrivals</a></li>
-                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link store">Store</a></li>
+                    <li className="mobile-menu__item"><a href="#" className="mobile-menu__link store">
+                            <input id="group" type="checkbox" hidden />
+                            <label htmlFor="group">Store<span>+</span></label>
+                            <div className="group-list">
+                                <a href="#">Item1</a>
+                                <a href="#">Item2</a>
+                            </div>  
+                    </a></li>
                     <li className="mobile-menu__item"><a href="#" className="mobile-menu__link video">Videos</a></li>
                     <li className="mobile-menu__item"><a href="#" className="mobile-menu__link blog">Blogs</a></li>
                 </ul>
