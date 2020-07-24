@@ -1,3 +1,64 @@
 .shop {
-    background-color: #FFFFFF;
+    position: absolute;
+    width: 143rem;
+    height: 100%;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    background: #FFF;
+    overflow-x: hidden;
+    z-index: -100;
+
+    @media screen and (min-width: 1440px) {
+        width: 144rem;
+        
+    } 
+    @media screen and (max-width: 1440px) {
+        width: 143rem;
+    }  
+
+
+
+    @media screen and (max-width: 600px) {
+    width: 100%;
+    height: 121.6rem;
+    z-index: -2
+    } 
+
+    &-product {
+        margin: 0 3.6rem;
+        display: grid;
+        grid-template-columns: 60.4rem 60.4rem;
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+
+       
+        &_image {
+           width: 68.4rem;
+           height: 72.8rem;
+        }
+        &_detail {
+           padding-left: 8.4rem;
+
+           img {
+            width: 7.2rem;
+            height: 2.6rem;
+            margin-bottom: 2.9rem;
+            margin-top: 2rem;
+           }
+
+           p {
+               color:#283664;
+               margin-bottom: 3rem;
+               .brand {
+                   font-size: 4.8rem;
+                   font-weight: bold;
+               }
+
+               .model {
+                font-size: 1.6rem;
+               }
+           }
+         }
+    }
 }

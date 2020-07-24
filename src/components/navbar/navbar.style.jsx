@@ -6,7 +6,6 @@ import cartWhite from '../../assets/cart.svg'
 import cartDark from '../../assets/cart-dark.svg'
 
 
-
 const darkNavbar = css`
     color : white;
 `
@@ -40,6 +39,19 @@ background: url(${cartDark}) no-repeat;
 const getCartColor = props => {
   return props.logo ? cartIconDark : cartIconWhite;
 };
+
+
+const borderLight = css`
+border: 0.2rem solid rgba(255,255,255, .25);
+`
+
+const borderDark = css`
+border: 0.2rem solid rgba(40, 54, 100, .25);
+`
+const getBorderColor = props => {
+  return props.border ? borderDark : borderLight;
+};
+
 
 
 
@@ -90,7 +102,7 @@ export const LoginButton= styled.button`
     text-transform: uppercase;
     width: 14.4rem;
     height: 6rem;
-    border: 0.2rem solid rgba(255,255,255, .25);
+    ${getBorderColor}
     box-sizing: border-box;
     border-radius: 3rem;
     font-family: 'Montserrat', sans-serif;

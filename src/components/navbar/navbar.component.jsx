@@ -22,7 +22,7 @@ const Navbar = ({...otherProps}) => {
    return (
         <div>
         <NavDesk {...otherProps}>
-            <LogoContainer/>
+            <LogoContainer {...otherProps}/>
               <MenuContainer>
                 <MenuItem><NavLink to='/new-arrivals'> New Arrivals </NavLink></MenuItem>
                 <MenuItem><NavLink to='/store'> Store </NavLink></MenuItem>
@@ -30,8 +30,8 @@ const Navbar = ({...otherProps}) => {
                 <MenuItem><NavLink to='/blog'> Blogs </NavLink></MenuItem>
             </MenuContainer> 
             <CartLogin>
-                <CartIconContainer/>
-                <LoginButton>
+                <CartIconContainer {...otherProps}/>
+                <LoginButton {...otherProps}>
                    Log In
                 </LoginButton>
             </CartLogin>

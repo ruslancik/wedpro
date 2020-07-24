@@ -14,11 +14,15 @@
         text-transform: uppercase;
         color: #ffffff;
         
-        img {
-            width: 4.5rem;
+        svg {
+            width: 5.5rem;
             height: 1.66rem;
             padding-left: 1.7rem;
             transition: all .2s;
+            @media screen and (max-width: 600px) {
+               margin-left: 8rem;
+               width: 7rem;
+              }
         }
     }
 
@@ -42,4 +46,21 @@
         left: 1.6rem;
         top: 12.4rem;
       } 
+
+}
+
+.blue {
+    position: relative;
+    .arrow {
+        color: #262E4D;
+
+            svg {
+                stroke: #262E4D;
+                path {
+                    stroke: #262E4D;
+                }
+            }
+        
+    }
+    
 }

@@ -23,7 +23,7 @@ import {
     Shadow
 } from './header.style'
 
-const Header = ({text, classForPos}) => {
+const Header = () => {
 
     useEffect(() => {
         var leftgear = document.getElementById("rotate");
