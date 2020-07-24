@@ -26,12 +26,13 @@
   left: 0;
   right: 0;
   height: 7rem;
-  overflow-y: hidden;
+  overflow: hidden;
+  z-index: 999;
+
 
   img{
       width: 6.4rem;
       height: 2.3rem;
-      margin-top: 3.5rem;
 
   }
   
@@ -44,7 +45,7 @@
     height: 5rem;
     cursor: pointer;
     transition: .4s;
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 
   }
   
@@ -181,9 +182,10 @@
     input[type=checkbox]:checked + label > span > img{
         width: 3rem;
         height: 3rem;
-       transform: rotate(180deg);
-       transition: all 1s;
+        transform: rotate(180deg);
+        transition: all 1s;
     }
+
     
   }
 

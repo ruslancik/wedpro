@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './shop.style.scss'
 import Navbar from '../../components/navbar/navbar.component'
+import MobileNav from '../../components/mobile-nav/mobile-nav.component'
 import sliderShoes1 from '../../assets/12454.png';
 import logo from '../../assets/nike-logo_torquese.svg'
 import Size from '../../components/size/size.component'
@@ -21,6 +22,7 @@ class Shop extends Component {
         return (
             <div className='shop'>
                 <Navbar light logo cart border/>
+                <MobileNav />
                 <div className="shop-product">
                     <img src={sliderShoes1} className="shop-product_image"/>
                     <div className="shop-product_detail">
@@ -44,6 +46,16 @@ class Shop extends Component {
                                 </ColorItemContainer>                               
                             </ColorSelContainer>
                         </Container>
+                        <span className='line'></span>
+                        <div className='cart-group'>
+                            <div className="count-button">
+                                <span className='decrease'>-</span>
+                                <span className='number'>1</span>
+                                <span className='increase'>+</span>
+                            </div>
+                            <button className="add-btn">Add to bag</button>
+                            <span className='message'>2 items added to the bag</span>
+                        </div>
                     </div>
                 </div>
             </div>

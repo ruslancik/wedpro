@@ -1,5 +1,6 @@
 import React, {useEffect}from 'react'
 import Navbar from '../navbar/navbar.component'
+import MobileNav from '../mobile-nav/mobile-nav.component';
 import Button from '../button/button.component'
 import HeroContent from '../hero-content/hero-content.component'
 import group from '../../assets/group.png'
@@ -35,6 +36,8 @@ const Header = () => {
     
 
     return (
+        <>
+        <MobileNav/>
         <HeroContainer>
             <Navbar/>
             <MotionBallRed/>
@@ -56,6 +59,7 @@ const Header = () => {
             <Button classForPos='btn-top' text='Enjoy discounts'/>
             <Button  classForPos='btn-bottom' text='See all shoes'/>
         </HeroContainer>
+        </>
     )
 
     }
