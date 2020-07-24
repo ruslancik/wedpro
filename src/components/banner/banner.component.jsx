@@ -13,8 +13,8 @@ const Banner = () => {
                 
                 <div className="banner-dropdown">
                     <input type="radio" name="option"/>
-                    <img className="toggle icon icon-arrow-down" src={arrDown}/>
-                    <img className="toggle icon icon-arrow-up" src={arrUp}/>
+                    <img className="toggle icon icon-arrow-down" alt='arrow down' src={arrDown}/>
+                    <img className="toggle icon icon-arrow-up" alt='arrow up' src={arrUp}/>
                     <span className="placeholder">Summer</span>
                     <label className="option">
                         <input type="radio" name="option"/>

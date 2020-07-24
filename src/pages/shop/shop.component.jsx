@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './shop.style.scss'
 import Navbar from '../../components/navbar/navbar.component'
-import sliderShoes1 from '../../assets/slider-shoes1.svg';
+import sliderShoes1 from '../../assets/12454.png';
 import logo from '../../assets/nike-logo_torquese.svg'
 import Size from '../../components/size/size.component'
 import Rate from '../../components/rate/rate.component'

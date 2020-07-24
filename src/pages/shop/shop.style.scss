@@ -1,13 +1,13 @@
 .shop {
     position: absolute;
     width: 143rem;
-    height: 100%;
     top: 0rem;
     left: 0rem;
     right: 0rem;
     background: #FFF;
     overflow-x: hidden;
     z-index: -100;
+    margin-bottom: 7.6rem;
 
     @media screen and (min-width: 1440px) {
         width: 144rem;
@@ -28,17 +28,24 @@
     &-product {
         margin: 0 3.6rem;
         display: grid;
-        grid-template-columns: 60.4rem 60.4rem;
+        grid-template-columns: 68.4rem 68.4rem;
+        grid-template-rows: 72rem;
         position: relative;
         font-family: 'Montserrat', sans-serif;
 
        
         &_image {
+           grid-column: 1 / span 1;
+           grid-row: 1 / -1;
            width: 68.4rem;
-           height: 72.8rem;
+           overflow-x: hidden;
+           height: 100%;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: left;
         }
         &_detail {
-           padding-left: 8.4rem;
+           margin-left: 8.4rem;
 
            img {
             width: 7.2rem;
