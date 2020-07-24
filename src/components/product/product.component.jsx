@@ -3,6 +3,7 @@ import './product.style.scss'
 import sliderShoes1 from '../../assets/slider-shoes1.svg';
 import sliderShoes2 from '../../assets/slider-shoes2.svg';
 import nikeLogo from '../../assets/nav-logo.svg';
+import {Link} from 'react-router-dom'
 
 const Product = () => {
     return (
@@ -17,7 +18,7 @@ const Product = () => {
             <div className="product-item item2">
                 <p className='product-item_text p2'>Air Force 1 <br/><span>React</span></p>
                 <img className='product-item_img' src={sliderShoes2} alt="Nike shoes"/>
-                <a className='product-item_btn' href="#">Shop now</a>
+                <a className='product-item_btn' href="">Shop now</a>
                 <img className='product-item_logo' src={nikeLogo} alt="Nike"/>
             </div>
         </div>

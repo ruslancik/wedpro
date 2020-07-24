@@ -6,6 +6,8 @@ import sliderShoes1 from '../../assets/12454.png';
 import logo from '../../assets/nike-logo_torquese.svg'
 import Size from '../../components/size/size.component'
 import Rate from '../../components/rate/rate.component'
+import {connect} from 'react-redux'
+import {addItemAction, removeItemAction} from '../../redux/cart.action'
 
 import {
     Container,
@@ -17,10 +19,28 @@ import {
 
 
 class Shop extends Component {
+    state = {
+        quantity : 0,
+        show: false
+    }
+
+    addItem = () => {
+        this.setState({show : true})
+        setTimeout(() => this.setState({show: false}), 2000);
+        this.setState(prevState => {
+            if(this.props.cart > 0) {
+                return {quantity: prevState.quantity + this.props.cart}
+            }
+            return prevState;
+        })
+    }
 
     render() {
         return (
             <div className='shop'>
+                { this.state.quantity <= 0 ? null :
+                    <div className="cart-badge" ><span>{this.state.quantity}</span></div>
+                }
                 <Navbar light logo cart border/>
                 <MobileNav />
                 <div className="shop-product">
@@ -49,12 +69,17 @@ class Shop extends Component {
                         <span className='line'></span>
                         <div className='cart-group'>
                             <div className="count-button">
-                                <span className='decrease'>-</span>
-                                <span className='number'>1</span>
-                                <span className='increase'>+</span>
+                                <span className='decrease' onClick={this.props.removeItemAction}>-</span>
+                                <span className='number'>{this.props.cart}</span>
+                                <span className='increase' onClick={this.props.addItemAction}>+</span>
                             </div>
-                            <button className="add-btn">Add to bag</button>
-                            <span className='message'>2 items added to the bag</span>
+                            <button className="add-btn" onClick={this.addItem}>Add to bag</button>
+                            {
+                                this.state.show && this.props.cart > 0 ?
+                                <span className='message'>{this.props.cart} items added to the bag</span>
+                                : null
+                              
+                            }
                         </div>
                     </div>
                 </div>
@@ -63,4 +88,13 @@ class Shop extends Component {
     }
 }
 
-export default Shop;
+const mapStateToProps = (state) => ({
+    cart: state.cart
+  })
+
+const mapDispatchToProps = dispatch => ({
+    addItemAction : () => dispatch(addItemAction()),
+    removeItemAction : () => dispatch(removeItemAction())
+  }) 
+
+  export default connect(mapStateToProps, mapDispatchToProps)(Shop);
